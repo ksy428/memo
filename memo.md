@@ -7,3 +7,13 @@
 - passwordEncoder.matches
 
   - 평문 비밀번호와 암호화된 비밀번호 비교함
+
+-  Cors문제(Spring Security <-> React)
+
+  - WebMvcConfigurer의 addCorsMappings 구현
+  
+  registry.addMapping("/**")
+            .allowedOriginPatterns("*")
+            .allowedMethods("*")
+            .allowedHeaders("*")
+            .allowCredentials(true);
