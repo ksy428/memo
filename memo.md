@@ -10,7 +10,7 @@
 
 -  Cors문제(Spring Security <-> React)
 
-
+    Spring Security
             public class WebSecurityConfig implements WebMvcConfigurer {
                 public void addCorsMappings(CorsRegistry registry) {
                     registry.addMapping("/**")
@@ -20,7 +20,5 @@
                             .allowCredentials(true);
                 }
             }
-React
-
-요청
+    React
             withCredentials = true;
