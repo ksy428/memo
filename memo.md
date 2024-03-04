@@ -18,7 +18,8 @@
                             .allowedOriginPatterns("*")
                             .allowedMethods("*")
                             .allowedHeaders("*")
-                            .allowCredentials(true);
+                            .allowCredentials(true)
+                            .exposedHeaders("Authorization","Authorization-refresh");
                 }
             }
 
