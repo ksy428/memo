@@ -11,6 +11,7 @@
 -  Cors문제(Spring Security <-> React)
 
    Spring Security
+   
             public class WebSecurityConfig implements WebMvcConfigurer {
                 public void addCorsMappings(CorsRegistry registry) {
                     registry.addMapping("/**")
