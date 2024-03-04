@@ -10,21 +10,16 @@
 
 -  Cors문제(Spring Security <-> React)
 
-  - WebMvcConfigurer의 addCorsMappings 구현
 
-  Spring Security
-  
-            registry.addMapping("/**")
-  
-            .allowedOriginPatterns("*")
-            
-            .allowedMethods("*")
-            
-            .allowedHeaders("*")
-            
-            .allowCredentials(true);
+   pring Security
 
-  
+          public void addCorsMappings(CorsRegistry registry) {
+              registry.addMapping("/**")
+                      .allowedOriginPatterns("*")
+                      .allowedMethods("*")
+                      .allowedHeaders("*")
+                      .allowCredentials(true);
+          }
 React
 
 요청
