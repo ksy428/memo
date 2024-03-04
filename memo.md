@@ -11,15 +11,15 @@
 -  Cors문제(Spring Security <-> React)
 
 
-   pring Security
-
-          public void addCorsMappings(CorsRegistry registry) {
-              registry.addMapping("/**")
-                      .allowedOriginPatterns("*")
-                      .allowedMethods("*")
-                      .allowedHeaders("*")
-                      .allowCredentials(true);
-          }
+            public class WebSecurityConfig implements WebMvcConfigurer {
+                public void addCorsMappings(CorsRegistry registry) {
+                    registry.addMapping("/**")
+                            .allowedOriginPatterns("*")
+                            .allowedMethods("*")
+                            .allowedHeaders("*")
+                            .allowCredentials(true);
+                }
+            }
 React
 
 요청
