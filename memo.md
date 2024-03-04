@@ -14,7 +14,7 @@
 
   Spring Security
   
-  registry.addMapping("/**")
+            registry.addMapping("/**")
   
             .allowedOriginPatterns("*")
             
@@ -27,4 +27,5 @@
   
 React
 
-요청에 withCredentials = true;
+요청
+            withCredentials = true;
