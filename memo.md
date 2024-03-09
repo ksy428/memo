@@ -27,3 +27,6 @@
     React
 
              withCredentials = true;
+
+- Filter 과정
+- <img width="782" alt="filter" src="https://github.com/ksy428/memo/assets/114653884/8f3482c3-d618-4a47-a6ac-692a46e4d397">
